@@ -1,10 +1,10 @@
 <?php
 if (isset($_POST["submit"])){
-    $email = $_POST["email"];
+    $username = $_POST["username"];
     $password = $_POST["password"];
 
     require_once "dbconfig.php";
-    $sql = "SELECT * FROM users WHERE email = '".$email ."' AND password = '". $password ."'";
+    $sql = "SELECT * FROM signup WHERE email = '".$email ."' AND password = '". $password ."'";
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) > 0) {
         session_start();

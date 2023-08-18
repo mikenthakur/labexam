@@ -8,8 +8,8 @@
 <body>
     <main>
       <form action="inc/login.inc.php" method="post">
-        <label for="email">Email Address</label>
-        <input type="email" id ="email" name="email" placeholder="Enter email" required><br><br>
+        <label for="username">Username</label>
+        <input type="text" id ="username" name="username" placeholder="Enter username" required><br><br>
 
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Enter passowrd" required><br><br>
