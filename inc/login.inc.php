@@ -4,12 +4,12 @@ if (isset($_POST["submit"])){
     $password = $_POST["password"];
 
     require_once "dbconfig.php";
-    $sql = "SELECT * FROM signup WHERE email = '".$email ."' AND password = '". $password ."'";
+    $sql = "SELECT * FROM signup WHERE username = '".$username ."' AND password = '". $password ."'";
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) > 0) {
         session_start();
         $_SESSION["email"] = $email;
-        header("location: ../index.php");
+        echo "Logged in!!";
         // goto index.php
     }
     else {
