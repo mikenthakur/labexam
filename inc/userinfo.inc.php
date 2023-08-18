@@ -8,7 +8,7 @@ if (isset($_POST["submit"])) {
     
     require_once "dbconfig.php";
 
-    $sql = "INSERT INTO `userinfo`(`name`, `email`, `phone`, `nationality`) VALUES ('".name."', '".$email."', '".$phone."', '".$nationality."')";
+    $sql = "INSERT INTO `userinfo`(`name`, `email`, `phone`, `nationality`) VALUES ('".$name."', '".$email."', '".$phone."', '".$nationality."')";
 
     $result = mysqli_query($conn, $sql);
 
