@@ -10,7 +10,7 @@ if (isset($_POST["submit"])){
         session_start();
         $_SESSION["email"] = $email;
         echo "Logged in!!";
-        // goto index.php
+        
     }
     else {
         echo "email or password wrong";
