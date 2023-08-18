@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p id="paraText">Hello World!!</p>
+    <form action="">
+        <input type="button" id="buttonText" value="Hide" onclick="hide()">
+
+    </form>
+
+    <script>
+        function hide(){
+            var buttonText = document.getElementById("buttonText").value;
+            var paraText = document.getElementById("paraText");
+            if (buttonText === "Hide") {
+                paraText.style.display = none;
+                document.getElementById("buttonText").value = "Show";
+            }
+            else {
+                paraText.style.display = display;
+                document.getElementById("buttonText").value = "Hide";
+            }
+        }
+    </script>
+</body>
+</html>
