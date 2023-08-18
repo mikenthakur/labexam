@@ -13,7 +13,7 @@
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="Enter name" required><br><br>
 
-            <label for="email">Image</label>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Enter email" required><br><br>
 
             <label for="phone">Phone</label><br>
